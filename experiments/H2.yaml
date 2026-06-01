@@ -1,0 +1,24 @@
+id: H2
+title: "Data re-uploading classifier vs standard feature map"
+description: >
+  Compare a data re-uploading ansatz against a single-pass feature map for the
+  same parameter budget on a toy 4-class dataset to test expressivity and generalization.
+device:
+  backend: lightning.qubit
+  wires: 4
+  shots: null
+hyperparams:
+  n_qubits: 4
+  n_classes: 4
+  n_samples: 120
+  n_epochs: 60
+  n_reupload: 3
+  batch_size: 24
+  learning_rate: 0.05
+  optimizer: GradientDescentOptimizer
+  seed: 42
+expected_runtime_sec: 45
+resource_caps:
+  max_qubits: 4
+  max_gates: 300
+  max_shots: null

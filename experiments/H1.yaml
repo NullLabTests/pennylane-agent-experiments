@@ -1,0 +1,22 @@
+id: H1
+title: "Local cost functions to mitigate barren plateaus"
+description: >
+  Replace global expectation-value loss with a weighted sum of local observables
+  to reduce gradient variance and speed training on small QML classification tasks.
+device:
+  backend: lightning.qubit
+  wires: 4
+  shots: null
+hyperparams:
+  n_layers: 2
+  n_samples: 80
+  n_epochs: 50
+  batch_size: 20
+  learning_rate: 0.05
+  optimizer: GradientDescentOptimizer
+  seed: 42
+expected_runtime_sec: 30
+resource_caps:
+  max_qubits: 4
+  max_gates: 200
+  max_shots: null
