@@ -1,0 +1,20 @@
+id: H3
+title: "Post-Variational Strategies on Non-Convex Landscapes"
+description: >
+  Compare variational training against observable-construction and ansatz-expansion
+  post-variational methods on benchmark datasets with non-convex loss landscapes.
+device:
+  backend: default.qubit
+  wires: 4
+  shots: null
+hyperparams:
+  n_wires: 4
+  max_iter: 200
+  learning_rate: 0.1
+  n_epochs: 30
+  seed: 42
+expected_runtime_sec: 60
+resource_caps:
+  max_qubits: 4
+  max_gates: 300
+  max_shots: null

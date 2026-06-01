@@ -54,14 +54,9 @@ This repository provides executable experiments — each packaged as a Jupyter n
 |----|-----------|----------|--------|------------|
 | H1 | Local cost functions to mitigate barren plateaus | [`demos/experiments/hypothesis_H1.ipynb`](demos/experiments/hypothesis_H1.ipynb) | [`experiments/H1.yaml`](experiments/H1.yaml) | [`tests/test_H1_smoke.py`](tests/test_H1_smoke.py) |
 | H2 | Data re-uploading classifier vs standard feature map | [`demos/experiments/hypothesis_H2.ipynb`](demos/experiments/hypothesis_H2.ipynb) | [`experiments/H2.yaml`](experiments/H2.yaml) | [`tests/test_H2_smoke.py`](tests/test_H2_smoke.py) |
-
-### Planned
-
-| ID | Hypothesis | Status |
-|----|-----------|--------|
-| H3 | Post-Variational Strategies on Non-Convex Landscapes | In development |
-| H4 | PDE-Constrained Loss Functions Suppress Gradient Vanishing | In development |
-| H5 | Data-Reuploading with Trainable Scaling on Small Benchmarks | In development |
+| H3 | Post-Variational Strategies on Non-Convex Landscapes | [`demos/experiments/hypothesis_H3.ipynb`](demos/experiments/hypothesis_H3.ipynb) | [`experiments/H3.yaml`](experiments/H3.yaml) | [`tests/test_H3_smoke.py`](tests/test_H3_smoke.py) |
+| H4 | PDE-Constrained Loss Functions Suppress Gradient Vanishing | [`demos/experiments/hypothesis_H4.ipynb`](demos/experiments/hypothesis_H4.ipynb) | [`experiments/H4.yaml`](experiments/H4.yaml) | [`tests/test_H4_smoke.py`](tests/test_H4_smoke.py) |
+| H5 | Data-Reuploading with Trainable Scaling on Small Benchmarks | [`demos/experiments/hypothesis_H5.ipynb`](demos/experiments/hypothesis_H5.ipynb) | [`experiments/H5.yaml`](experiments/H5.yaml) | [`tests/test_H5_smoke.py`](tests/test_H5_smoke.py) |
 
 ---
 
