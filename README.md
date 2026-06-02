@@ -41,6 +41,13 @@
 
 <br/>
 
+<p align="center">
+  <img src="assets/experiment_lifecycle.svg" alt="Experiment Lifecycle Diagram" width="95%">
+</p>
+<p align="center"><sub>Complete experiment lifecycle: Create (notebook + config + test) → Validate (CI smoke tests) → Execute (run notebook) → Analyze (results JSON). All 5 experiments (H1–H5) are complete and ready to run.</sub></p>
+
+<br/>
+
 ---
 
 ## 🎯 Overview

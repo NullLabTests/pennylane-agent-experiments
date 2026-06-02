@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/><stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/><stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/><stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/><stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/><stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444"/><stop offset="100%" style="stop-color:#DC2626"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="bold">📓 Experiment Lifecycle</text>
+  <line x1="100" y1="48" x2="700" y2="48" stroke="#334155" stroke-width="1"/>
+
+  <!-- Phase 1: Create -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="70" width="170" height="80" rx="12" fill="url(#purple)"/>
+    <text x="115" y="95" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20">✏️</text>
+    <text x="115" y="118" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="bold">1. Create</text>
+    <text x="115" y="135" text-anchor="middle" fill="#ddd6fe" font-family="Arial,sans-serif" font-size="9">Notebook + Config + Test</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <text x="218" y="110" fill="#475569" font-family="Arial,sans-serif" font-size="20">→</text>
+
+  <!-- Phase 2: Test -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="70" width="170" height="80" rx="12" fill="url(#blue)"/>
+    <text x="325" y="95" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20">🧪</text>
+    <text x="325" y="118" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="bold">2. Validate</text>
+    <text x="325" y="135" text-anchor="middle" fill="#bfdbfe" font-family="Arial,sans-serif" font-size="9">CI Smoke Tests</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <text x="428" y="110" fill="#475569" font-family="Arial,sans-serif" font-size="20">→</text>
+
+  <!-- Phase 3: Run -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="70" width="170" height="80" rx="12" fill="url(#green)"/>
+    <text x="535" y="95" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20">▶️</text>
+    <text x="535" y="118" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="bold">3. Execute</text>
+    <text x="535" y="135" text-anchor="middle" fill="#a7f3d0" font-family="Arial,sans-serif" font-size="9">Run Notebook</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <text x="638" y="110" fill="#475569" font-family="Arial,sans-serif" font-size="20">→</text>
+
+  <!-- Phase 4: Analyze -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="70" width="120" height="80" rx="12" fill="url(#amber)"/>
+    <text x="720" y="95" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20">📊</text>
+    <text x="720" y="118" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="bold">4. Analyze</text>
+    <text x="720" y="135" text-anchor="middle" fill="#fde68a" font-family="Arial,sans-serif" font-size="9">Results JSON</text>
+  </g>
+
+  <!-- Feedback loop -->
+  <path d="M720,155 L720,200 L115,200 L115,155" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="400" y="215" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Feedback: results inform hypothesis refinement</text>
+
+  <!-- Per-experiment details section -->
+  <line x1="30" y1="235" x2="770" y2="235" stroke="#334155" stroke-width="1"/>
+
+  <text x="400" y="258" text-anchor="middle" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12" font-weight="bold">Experiment Implementation Status</text>
+
+  <!-- H1 -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="275" width="140" height="90" rx="10" fill="#1e293b" stroke="#8B5CF6" stroke-width="1.5"/>
+    <text x="100" y="298" text-anchor="middle" fill="#8B5CF6" font-family="Arial,sans-serif" font-size="14" font-weight="bold">H1</text>
+    <text x="100" y="315" text-anchor="middle" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="9">Joint NAS HQNN</text>
+    <rect x="45" y="328" width="110" height="18" rx="9" fill="url(#green)"/>
+    <text x="100" y="340" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">✅ Complete</text>
+  </g>
+
+  <!-- H2 -->
+  <g filter="url(#shadow)">
+    <rect x="190" y="275" width="140" height="90" rx="10" fill="#1e293b" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="260" y="298" text-anchor="middle" fill="#3B82F6" font-family="Arial,sans-serif" font-size="14" font-weight="bold">H2</text>
+    <text x="260" y="315" text-anchor="middle" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="9">Dissipation BP</text>
+    <rect x="205" y="328" width="110" height="18" rx="9" fill="url(#green)"/>
+    <text x="260" y="340" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">✅ Complete</text>
+  </g>
+
+  <!-- H3 -->
+  <g filter="url(#shadow)">
+    <rect x="350" y="275" width="140" height="90" rx="10" fill="#1e293b" stroke="#EF4444" stroke-width="1.5"/>
+    <text x="420" y="298" text-anchor="middle" fill="#EF4444" font-family="Arial,sans-serif" font-size="14" font-weight="bold">H3</text>
+    <text x="420" y="315" text-anchor="middle" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="9">Post-Variational</text>
+    <rect x="365" y="328" width="110" height="18" rx="9" fill="url(#green)"/>
+    <text x="420" y="340" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">✅ Complete</text>
+  </g>
+
+  <!-- H4 -->
+  <g filter="url(#shadow)">
+    <rect x="510" y="275" width="140" height="90" rx="10" fill="#1e293b" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="580" y="298" text-anchor="middle" fill="#F59E0B" font-family="Arial,sans-serif" font-size="14" font-weight="bold">H4</text>
+    <text x="580" y="315" text-anchor="middle" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="9">PDE-Constrained</text>
+    <rect x="525" y="328" width="110" height="18" rx="9" fill="url(#green)"/>
+    <text x="580" y="340" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">✅ Complete</text>
+  </g>
+
+  <!-- H5 -->
+  <g filter="url(#shadow)">
+    <rect x="670" y="275" width="110" height="90" rx="10" fill="#1e293b" stroke="#10B981" stroke-width="1.5"/>
+    <text x="725" y="298" text-anchor="middle" fill="#10B981" font-family="Arial,sans-serif" font-size="14" font-weight="bold">H5</text>
+    <text x="725" y="315" text-anchor="middle" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="9">Data Reupload</text>
+    <rect x="680" y="328" width="90" height="18" rx="9" fill="url(#green)"/>
+    <text x="725" y="340" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="8" font-weight="bold">✅ Complete</text>
+  </g>
+
+  <!-- Bottom stats -->
+  <line x1="30" y1="390" x2="770" y2="390" stroke="#334155" stroke-width="1"/>
+
+  <text x="400" y="415" text-anchor="middle" fill="#94a3b8" font-family="Arial,sans-serif" font-size="11" font-weight="bold">Repository Stats</text>
+
+  <!-- Stats boxes -->
+  <g>
+    <rect x="50" y="432" width="100" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="100" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">5</text>
+    <text x="100" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Notebooks</text>
+  </g>
+  <g>
+    <rect x="180" y="432" width="100" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="230" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">5</text>
+    <text x="230" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Configs</text>
+  </g>
+  <g>
+    <rect x="310" y="432" width="100" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="360" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">5</text>
+    <text x="360" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Smoke Tests</text>
+  </g>
+  <g>
+    <rect x="440" y="432" width="100" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="490" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">5</text>
+    <text x="490" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Device Types</text>
+  </g>
+  <g>
+    <rect x="570" y="432" width="100" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="620" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">1</text>
+    <text x="620" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">CI Pipeline</text>
+  </g>
+  <g>
+    <rect x="700" y="432" width="70" height="40" rx="8" fill="#1a1a2e" stroke="#64748b" stroke-width="1"/>
+    <text x="735" y="448" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="bold">3</text>
+    <text x="735" y="463" text-anchor="middle" fill="#64748b" font-family="Arial,sans-serif" font-size="9">Repos</text>
+  </g>
+</svg>
