@@ -1,5 +1,25 @@
-venv/
+# Byte-compiled
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
-results/
+*.py[cod]
+*$py.class
+
+# Env
+.env
+.venv
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.egg-info/
